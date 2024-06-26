@@ -9,15 +9,16 @@ public class Customer {
     private Integer id;
     private String name;
     private String status;
-    private Integer total_Flight_Mileage;
+    private Integer totalFlightMileage;
+
 
     public Customer() {
     }
 
-    public Customer(String name, String status, Integer total_Flight_Mileage) {
+    public Customer(String name, String status, Integer totalFlightMileage) {
         this.name = name;
         this.status = status;
-        this.total_Flight_Mileage = total_Flight_Mileage;
+        this.totalFlightMileage = totalFlightMileage;
     }
 
     public Integer getId() {
@@ -45,11 +46,11 @@ public class Customer {
     }
 
     public Integer getTotal_Flight_Mileage() {
-        return total_Flight_Mileage;
+        return totalFlightMileage;
     }
 
     public void setTotal_Flight_Mileage(Integer total_Flight_Mileage) {
-        this.total_Flight_Mileage = total_Flight_Mileage;
+        this.totalFlightMileage = total_Flight_Mileage;
     }
 
     @Override
@@ -58,7 +59,7 @@ public class Customer {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", status='" + status + '\'' +
-                ", total_Flight_Mileage=" + total_Flight_Mileage +
+                ", total_Flight_Mileage=" + totalFlightMileage +
                 '}';
     }
 }

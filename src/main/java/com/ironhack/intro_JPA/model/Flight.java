@@ -7,7 +7,6 @@ public class Flight {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private Integer customerId;
     private String flightNumber;
     private String aircraft;
     private Integer totalAircraftSeats;
@@ -16,13 +15,11 @@ public class Flight {
     public Flight() {
     }
 
-    public Flight(Integer customerId, String flightNumber, String aircraft, Integer totalAircraftSeats, Integer flightMileage) {
-        this.customerId = customerId;
+    public Flight(String flightNumber, String aircraft, Integer totalAircraftSeats, Integer flightMileage) {
         this.flightNumber = flightNumber;
         this.aircraft = aircraft;
         this.totalAircraftSeats = totalAircraftSeats;
         this.flightMileage = flightMileage;
-
     }
 
     public Integer getId() {
@@ -31,14 +28,6 @@ public class Flight {
 
     public void setId(Integer id) {
         this.id = id;
-    }
-
-    public Integer getCustomerId() {
-        return customerId;
-    }
-
-    public void setCustomerId(Integer customerId) {
-        this.customerId = customerId;
     }
 
     public String getFlightNumber() {
@@ -75,13 +64,12 @@ public class Flight {
 
     @Override
     public String toString() {
-        return "Airline{" +
-                "id=" + this.id +
-                ", customerId=" + this.customerId +
-                ", flightNumber='" + this.flightNumber + '\'' +
-                ", aircraft='" + this.aircraft + '\'' +
-                ", totalAircraftSeats=" + this.totalAircraftSeats +
-                ", flightMileage=" + this.flightMileage +
-                '}'+"\n";
+        return "Flight{" +
+                "id=" + id +
+                ", flightNumber='" + flightNumber + '\'' +
+                ", aircraft='" + aircraft + '\'' +
+                ", totalAircraftSeats=" + totalAircraftSeats +
+                ", flightMileage=" + flightMileage +
+                '}'+ "\n";
     }
 }

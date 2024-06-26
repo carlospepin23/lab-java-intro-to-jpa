@@ -8,7 +8,7 @@ CREATE TABLE customer (
 	id INT AUTO_INCREMENT PRIMARY KEY,
 	name VARCHAR(255) NOT NULL,
     status VARCHAR(255),
-    total_flightMileage INT
+    totalFlightMileage INT
 
 );
 
@@ -18,14 +18,12 @@ CREATE TABLE flight (
 	flightNumber VARCHAR(255),
 	aircraft VARCHAR(255),
 	totalAircraftSeats INT,
-	flightMileage INT,
-
-	FOREIGN KEY (customerId) REFERENCES customer(id)
+	flightMileage INT
 
 );
 
 
-INSERT INTO customer (name, status,  total_flightMileage)
+INSERT INTO customer (name, status,  totalFlightMileage)
 VALUES
     ('Agustine Riviera', 'Silver',115235),
     ('Alaina Sepulvida', 'None',6008),
