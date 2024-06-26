@@ -23,7 +23,7 @@ Once you finish the assignment, submit a URL link to your repository or your pul
 
 ## Instructions
 
-For this homework assignment, you will be using the data from the airline database from lab 3.02 and the [Spring JPA Documentation](https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.query-methods.query-creation).
+For this homework assignment, you will be using the data from the flight database from lab 3.02 and the [Spring JPA Documentation](https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.query-methods.query-creation).
 
 You will be creating three main classes and an enum class: `FlightBooking`, `Customer` and `Flight`. The enum class will be called `CustomerStatus`.
 
